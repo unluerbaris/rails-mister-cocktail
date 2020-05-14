@@ -9,4 +9,12 @@ Ingredient.destroy_all
 
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
+Ingredient.create(name: "Vodka")
+Ingredient.create(name: "Lime juice")
+Ingredient.create(name: "Mango")
+Ingredient.create(name: "Peach Vodka")
+Ingredient.create(name: "Coffee")
+Ingredient.create(name: "Cranberry juice")
+Ingredient.create(name: "Cider")
+Ingredient.create(name: "Apple juice")
 Ingredient.create(name: "mint leaves")
