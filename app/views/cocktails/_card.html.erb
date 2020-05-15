@@ -6,7 +6,7 @@
 
  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cocktail.photo.attached? ? cl_image_path(cocktail.photo.key , height: 300, width: 400, crop: :fill) : "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg"  %>')">
   <td><h3><%= cocktail.name %></h3></td>
-  <td><%= link_to ' Show Details', cocktail , class: 'btn btn-primary mt-2'%></td>
+  <td><%= link_to ' Show Details', cocktail , class: 'btn btn-dark mt-2'%></td>
 </div>
 
 
