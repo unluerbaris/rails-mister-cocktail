@@ -1,28 +1,14 @@
 <div class="container mt-3">
+
+<h1>Cocktails</h1>
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-6">
-      <h1>Cocktails</h1>
-
-<table>
-  <thead>
-    <tr class="table-primary">
-      <th>Name</th>
-      <th colspan="1"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cocktails.each do |cocktail| %>
-      <%= render 'card', cocktail: cocktail %>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+    <div class="col-6">
+       <% @cocktails.each do |cocktail| %>
+          <div class="mb-5"><%= render 'card', cocktail: cocktail %></div>
+       <% end %>
+     </div>
+  </div>
 <%= link_to 'New Cocktail', new_cocktail_path , class: 'btn btn-primary mt-2' %>
 
-    </div>
-  </div>
 </div>
 
