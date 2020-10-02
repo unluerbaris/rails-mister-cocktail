@@ -1,13 +1,19 @@
 <div >
-  <div><%= render 'banner'%></div>
-  <div class="row justify-content-center"><h1 class="m-5">Cocktails</h1></div>
+  <div>
+    <%= render 'banner'%>
+  </div>
+  <div class="row justify-content-center">
+    <h1 class="m-5">Cocktails</h1>
+  </div>
   <div class="row justify-content-center">
     <% @cocktails.each do |cocktail| %>
-      <div class="mb-3 col-sm-12 col-md-6 col-lg-4 col-xl-4"><%= render 'card', cocktail: cocktail %></div>
+      <div class="mb-3 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <%= render 'card', cocktail: cocktail %>
+      </div>
     <% end %>
   </div>
   <div class="row justify-content-center">
-<%= link_to 'New Cocktail', new_cocktail_path , class: 'btn btn-secondary m-4' %>
+    <%= link_to 'New Cocktail', new_cocktail_path , class: 'btn btn-secondary m-4' %>
   </div>
 </div>
 
