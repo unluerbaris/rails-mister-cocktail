@@ -16,9 +16,11 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-import { loadDynamicBannerText } from '../components/typed-anim.js';
+import { loadDynamicBannerText } from '../components/typed_anim.js';
+import { initSortable } from '../components/init_sortable';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
    loadDynamicBannerText();
+   initSortable();
 });
