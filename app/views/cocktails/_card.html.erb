@@ -1,4 +1,4 @@
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cocktail.photo.attached? ? cl_image_path(cocktail.photo.key , height: 300, width: 400, crop: :fill) : "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/3964054/910/607/m2/fpnw/wm1/cr1qhqqvhul64cothtalyps409a3e5mbaml3autgtbzhy5obb5kofmylsaydyfxb-.jpg?1517946858&s=c879fb9163aecd844c687245cca2f13b"  %>')">
+<div class="cocktail-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cocktail.photo.attached? ? cl_image_path(cocktail.photo.key , height: 300, width: 400, crop: :fill) : "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/3964054/910/607/m2/fpnw/wm1/cr1qhqqvhul64cothtalyps409a3e5mbaml3autgtbzhy5obb5kofmylsaydyfxb-.jpg?1517946858&s=c879fb9163aecd844c687245cca2f13b"  %>')">
   <td><h3><%= cocktail.name %></h3></td>
   <td><%= link_to ' Show Details', cocktail , class: 'btn btn-dark mt-2'%></td>
 </div>
