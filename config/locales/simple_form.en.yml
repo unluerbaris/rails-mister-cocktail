@@ -1,7 +1,7 @@
 en:
   helpers:
     submit:
-      create: "Add Ingredient"
+      create: "Add %{model}"
       update: "Save Changes"
   simple_form:
     "yes": 'Yes'
