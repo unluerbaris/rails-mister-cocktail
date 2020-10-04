@@ -1,15 +1,13 @@
 <div >
   <%= render 'banner'%>
-  <div class="row justify-content-center">
-    <h1 class="m-5">Cocktails</h1>
+  <div class="top">
+    <h1 class>Create a Cocktail Recipe</h1>
+    <%= link_to 'Add Cocktail', new_cocktail_path , id: 'title-button', class: 'btn btn-secondary p-2' %>
   </div>
   <div id="cocktail-cards" class="cocktail-cards">
     <% @cocktails.each do |cocktail| %>
       <%= render 'card', cocktail: cocktail %>
     <% end %>
-  </div>
-  <div class="row justify-content-center">
-    <%= link_to 'New Cocktail', new_cocktail_path , class: 'btn btn-secondary m-4' %>
   </div>
 </div>
 
